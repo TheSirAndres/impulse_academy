@@ -38,28 +38,11 @@ html{
 body{
     background-color: #2a2a2a;
     margin: 0;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 2; */
-}
-/* body::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-image: url('img/textile-1251716_1920.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
-  opacity: 0.03;
-  pointer-events: none;
-  z-index: -1;
 
-}  */
+}
+
+/* navbar --------------------------------------------------------------------------------*/
+
 nav{
   background-color: var(--dark);
   display: flex;
@@ -161,6 +144,9 @@ nav{
   border-bottom: var(--dark) 1px solid;
   margin-bottom: 10px;
 }
+
+/* hero section -------------------------------------------------------------------------------*/
+
 .hero-container{
   display: flex;
   flex-direction: column;
@@ -202,6 +188,9 @@ nav{
   text-align: center;
   margin-top: 100px;
 }
+
+/* cards section -------------------------------------------------------------------------------*/
+
 .card-container{
   display: flex;
   flex-wrap: wrap;
@@ -363,6 +352,10 @@ h3{
   background-color: var(--purple);
   border-radius: 30px;
 }
+
+/* Courses section -------------------------------------------------------------*/
+
+
 .courses-container{
   display: flex;
   flex-direction: column;
@@ -498,6 +491,74 @@ h3{
 .mobile div a:hover{
   background-color: var(--yellow_hover);
 }
+
+
+/* Contact Section --------------------------------------------------------------------------------*/
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 40vw;
+  margin: auto;
+  margin-top: 100px;
+  background-color: var(--purple);
+  border-radius: 30px;
+}
+
+.contact h3{
+  font-family: "Bebas Neue";
+  color: var(--white);
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 200;
+}
+.contact-container{
+  width: 100%;
+}
+.contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  color: var(--white);
+  font-size: 1.6rem;
+}
+#contact-form div label{
+  display: block;
+  margin-bottom: 5px;
+}
+#contact-form div input, #contact-form div textarea{
+  width: 20vw;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  resize: none;
+}
+
+#contact-form button{
+  background-color: var(--white);
+  color: var(--dark);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  margin-bottom: 30px;
+  transition: all 0.5s ease;
+}
+
+#contact-form div textarea{
+  height: 100px;
+  margin-bottom: 20px;
+}
+#contact-form button:hover{
+  background-color: var(--purple_hover);
+  color: var(--white);
+}
+
+/* Toggles statuses -------------------------------------------------------------------------------*/
 .neonText {
   color: #fff;
   text-shadow:
@@ -523,15 +584,6 @@ h3{
   justify-content: center;
   align-items: center;
 }
-footer {
-  margin-top: 100px;
-  background-color: var(--dark);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15))
-          drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
-  color: var(--white);
-  padding: 20px;
-  text-align: center;
-}
 .remove{
   color: var(--white);
   background-color: var(--purple);
@@ -544,3 +596,17 @@ footer {
   background-color: var(--purple_hover);
   color: var(--red);
 }
+
+
+/* Footer Section -------------------------------------------------------------------------------*/
+footer {
+  margin-top: 100px;
+  background-color: var(--dark);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15))
+          drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.25));
+  color: var(--white);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Media Queries ---------------------------------------------------------------------------------*/
