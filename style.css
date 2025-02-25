@@ -538,7 +538,7 @@ h3{
   resize: none;
 }
 
-#contact-form button{
+.contact-submit{
   background-color: var(--white);
   color: var(--dark);
   border: none;
@@ -553,7 +553,7 @@ h3{
   height: 100px;
   margin-bottom: 20px;
 }
-#contact-form button:hover{
+.contact-submit button:hover{
   background-color: var(--purple_hover);
   color: var(--white);
 }
@@ -595,6 +595,11 @@ h3{
 .remove:hover{
   background-color: var(--purple_hover);
   color: var(--red);
+}
+.disabled{
+  color: var(--white);
+  background-color: var(--red);
+  cursor: not-allowed;
 }
 
 
