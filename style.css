@@ -137,12 +137,21 @@ nav{
 }
 #empty-cart {
   text-decoration: none;
-  color: var(--dark);
+  color: var(--white);
   margin: 30px 0px 10px 2px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--red);
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px none var(--dark);
 }
 #cart-table {
   border-bottom: var(--dark) 1px solid;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+}
+.cart-tr{
+  border-bottom: var(--dark) 1px solid;
 }
 
 /* hero section -------------------------------------------------------------------------------*/
@@ -547,15 +556,25 @@ h3{
   cursor: pointer;
   margin-bottom: 30px;
   transition: all 0.5s ease;
+  margin-top: 20px;
 }
 
 #contact-form div textarea{
   height: 100px;
-  margin-bottom: 20px;
 }
-.contact-submit button:hover{
+
+.contact-submit:not(.disabled):hover{
   background-color: var(--purple_hover);
   color: var(--white);
+
+}
+.error-line{
+  display: none;
+  font-size: 1.4rem;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--red);
+  border-radius: 10px;
 }
 
 /* Toggles statuses -------------------------------------------------------------------------------*/
@@ -600,6 +619,7 @@ h3{
   color: var(--white);
   background-color: var(--red);
   cursor: not-allowed;
+  opacity: 60%;
 }
 .error{
   color: var(--red) !important;
