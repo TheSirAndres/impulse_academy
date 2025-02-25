@@ -169,22 +169,21 @@
     <section class="contact">
         <h3>Contactanos y obten mas informacion</h3>
             <div class="contact-container">
-                <form id="contact-form">
+                <form id="contact-form" class="contact-form">
                     <div>
                         <label for="name">Nombre:</label>
                         <input type="text" id="name" placeholder="Nombre completo" required>
+                        <p class="error-line name-error"></p>
                     </div>
                     <div>
                         <label for="email">Correo electrónico:</label>
                         <input type="email" id="email" placeholder="Correo electrónico" required>
+                        <p class="error-line emailerror"></p>
                     </div>
-                    <div>
-                        <label for="reason">Asunto</label>
-                        <input type="text" id="reason" placeholder="Escribe tu asunto" required>
-                    </
                     <div>
                         <label for="message">Mensaje:</label>
                         <textarea id="message" placeholder="Escribe tu mensaje" required></textarea>
+                        <p class="error-line message-error"></p>
                     </div>
                     <button type="submit" id="contact-submit" class="contact-submit disabled" >Enviar</button>
                 </form>
