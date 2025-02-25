@@ -157,7 +157,7 @@ MIT License. See `LICENSE` for details.
 🚀 **Impulse Learning**  
 🌐 Fictional project part of **Impulse Corporation** portfolio  
 📧 contact@impulse-learning.dev (placeholder)  
-🔗 [Live Preview](https://flourishing-selkie-614cf8.netlify.app)) <!-- Update URL -->
+🔗 ([Live Preview](https://impulseacademies.netlify.app/)) <!-- Update URL -->
 ```
 
 ### Key Admonitions Used:
