@@ -45,6 +45,11 @@ function type() {
 // Start the typing animation
 type();
 
+
+
+
+
+
 // cart funtions ---------------------------------------------------------------------
 
 const cartDropdown = document.querySelector(".cart-dropdown");
@@ -53,7 +58,6 @@ const cartButton = document.querySelector(".shopping-cart-button");
 const cartDropdownContent = document.querySelector("#cart-table tbody");
 let cart = []
 let totalPrice = 0;
-
 
 
 // toogle cart dropdown----------------------------------------------------------------
@@ -147,4 +151,33 @@ cartDropdown.addEventListener("click", (e) => {
         cart = [];
         printData();
     }
+})
+
+
+
+// Form starts ----------------------------------------------------------------
+document.addEventListener("DOMContentLoaded", () => {
+    // get the form inputs
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const reasonInput = document.getElementById("reason");
+    const messageInput = document.getElementById("message");
+    const submitButton = document.getElementById("contact-submit");
+
+    // add event listener to the name input
+    nameInput.addEventListener("input", (e) => {
+        console.log(e.target.value)
+    });
+    // add event listener to the email input
+    emailInput.addEventListener("input", (e) => {
+        console.log(e.target.value)
+    });
+    // add event listener to the reason input
+    reasonInput.addEventListener("input", (e) => {
+        console.log(e.target.value)
+    });
+    // add event listener to the message input
+    messageInput.addEventListener("input", (e) => {
+        console.log(e.target.value)
+    });
 })
