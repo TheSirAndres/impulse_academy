@@ -164,20 +164,24 @@ document.addEventListener("DOMContentLoaded", () => {
     const messageInput = document.getElementById("message");
     const submitButton = document.getElementById("contact-submit");
 
-    // add event listener to the name input
-    nameInput.addEventListener("input", (e) => {
-        console.log(e.target.value)
-    });
-    // add event listener to the email input
-    emailInput.addEventListener("input", (e) => {
-        console.log(e.target.value)
-    });
-    // add event listener to the reason input
-    reasonInput.addEventListener("input", (e) => {
-        console.log(e.target.value)
-    });
-    // add event listener to the message input
-    messageInput.addEventListener("input", (e) => {
-        console.log(e.target.value)
-    });
-})
+    // add event listener to the inputs to validate the form
+    nameInput.addEventListener("input", validate)
+    emailInput.addEventListener("input", validate)
+    reasonInput.addEventListener("input", validate)
+    messageInput.addEventListener("input", validate)
+
+
+    // add event listener to the input to avoid them to be empty
+    nameInput.addEventListener("blur", validate)
+    emailInput.addEventListener("blur", validate)
+    reasonInput.addEventListener("blur", validate)
+    messageInput.addEventListener("blur", validate)
+
+    function validate(e){
+        if (e.target.value == ""){
+            e.target.classList.add("error");
+        } else {
+            return
+    }
+
+}})

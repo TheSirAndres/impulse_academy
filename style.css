@@ -601,6 +601,10 @@ h3{
   background-color: var(--red);
   cursor: not-allowed;
 }
+.error{
+  color: var(--red) !important;
+  background-color: var(--red) !important;
+}
 
 
 /* Footer Section -------------------------------------------------------------------------------*/
