@@ -116,7 +116,7 @@ New Tech → Prototype → Refactor → Document
 - Career path engine
 - Student analytics
 
-[!caution]  
+>[!caution]  
 **Timeline Note**: Roadmap subject to change based on learning priorities.
 
 ---
