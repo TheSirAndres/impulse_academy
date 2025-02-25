@@ -46,7 +46,7 @@ A dynamic programming education platform prototype developed as **practice proje
 - [ ] Career path recommendations
 - [ ] Admin dashboard
 
-[!tip]  
+>[!tip]  
 **Long-Term Vision**: While currently a portfolio piece, architecture allows potential evolution into functional MVP.
 
 ---
@@ -75,7 +75,7 @@ Planned Backend
 └── Analytics System
 
 
-[!warning]  
+>[!warning]  
 **Current Limitation**: Backend functionality not yet implemented - all data is mock/stubbed.
 
 ---
@@ -88,7 +88,7 @@ Planned Backend
 - Explore e-learning UX patterns
 - Develop project iteration discipline
 
-[!note]  
+>[!note]  
 **Experimental Sandbox**: This codebase serves as testing ground for:  
 ```plaintext
 New Tech → Prototype → Refactor → Document
@@ -132,7 +132,7 @@ New Tech → Prototype → Refactor → Document
    npx serve . # or open index.html directly
    ```
 
-[!important]  
+>[!important]  
 **No Backend Required**: Current version operates as static site with mocked data.
 
 ---
@@ -144,7 +144,7 @@ While primarily a personal learning project, constructive feedback is welcome th
 - Code review suggestions
 - UX improvement proposals
 
-[!tip]  
+>[!tip]  
 **Learning Focus**: Contributions should align with educational goals rather than production-readiness.
 
 ---
@@ -157,7 +157,7 @@ MIT License. See `LICENSE` for details.
 🚀 **Impulse Learning**  
 🌐 Fictional project part of **Impulse Corporation** portfolio  
 📧 contact@impulse-learning.dev (placeholder)  
-🔗 [Live Preview](https://your-portfolio-site.com/impulse-learning) <!-- Update URL -->
+🔗 [Live Preview](https://flourishing-selkie-614cf8.netlify.app)) <!-- Update URL -->
 ```
 
 ### Key Admonitions Used:
