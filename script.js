@@ -160,28 +160,108 @@ document.addEventListener("DOMContentLoaded", () => {
     // get the form inputs
     const nameInput = document.getElementById("name");
     const emailInput = document.getElementById("email");
-    const reasonInput = document.getElementById("reason");
     const messageInput = document.getElementById("message");
     const submitButton = document.getElementById("contact-submit");
+    const filledData = {
+        name: '',
+        email: '',
+        message: ''
+    };
 
     // add event listener to the inputs to validate the form
     nameInput.addEventListener("input", validate)
     emailInput.addEventListener("input", validate)
-    reasonInput.addEventListener("input", validate)
     messageInput.addEventListener("input", validate)
 
 
     // add event listener to the input to avoid them to be empty
     nameInput.addEventListener("blur", validate)
     emailInput.addEventListener("blur", validate)
-    reasonInput.addEventListener("blur", validate)
     messageInput.addEventListener("blur", validate)
 
+    // add event listener to the submit button
+    submitButton.addEventListener("click", (e) => {
+        e.preventDefault();
+        submitted(e)
+    })
+
+
+    // validate the form -------------------------------
     function validate(e){
-        if (e.target.value == ""){
-            e.target.classList.add("error");
+        let error= e.target.parentElement.querySelector(".error-line");
+        if (e.target.id == 'message'){
+            validated(e)
         } else {
-            return
+            if (e.target.value.trim() == ""){
+                error.textContent = "Este campo es obligatorio"
+                error.classList.add("show");
+                filledData[e.target.id] = '';
+                disableButton()
+            } else if (e.target.id == "email") {
+                if (!validateEmail(e.target.value)){
+                    error.textContent = "Por favor ingrese un email válido"
+                    error.classList.add("show");
+                    filledData[e.target.id] = '';
+                    disableButton()
+                } else {
+                    validated(e)
+                }
+            }else {
+                validated(e)
+            }
+        }
+        validateFilleData()
+    }
+    // validate email
+    function validateEmail(email) {
+        const regex =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/
+        return regex.test(email);
+    }
+    // hide error message and register the input
+    function validated(e){
+        filledData[e.target.id] = e.target.value.trim().toLowerCase();
+        e.target.parentElement.querySelector(".error-line").classList.remove("show");
+    }
+    // validate if all inputs are filled
+    function validateFilleData() {
+        if (filledData.name !== "" && filledData.email !== ""){
+            submitButton.disabled = false
+            submitButton.classList.remove("disabled");
+        } else {
+            disableButton()
+        }
+    }
+    // disable submit button
+    function disableButton() {
+        submitButton.disabled = true
+        submitButton.classList.add("disabled");
     }
 
-}})
+    // clear form inputs
+    function clearForm() {
+        nameInput.value = "";
+        emailInput.value = "";
+        messageInput.value = "";
+        filledData['name'] = "";
+        filledData['email'] = "";
+        filledData['message'] = "";
+        validateFilleData()
+    }
+    function submitted(e) {
+        const alertMessage = document.createElement("p")
+        alertMessage.textContent = "Tu mensaje ha sido enviado exitosamente!"
+        alertMessage.classList.add("succeeded")
+        e.target.classList.add("hide")
+        e.target.parentElement.querySelector(".spinner").classList.add("show")
+        setTimeout(() => {
+            e.target.parentElement.appendChild(alertMessage)
+            e.target.parentElement.querySelector(".spinner").classList.remove("show")
+            console.log("Primer round completado")
+            clearForm();
+            setTimeout(() => {
+                alertMessage.remove()
+                e.target.classList.remove("hide")
+            }, 3000);
+        }, 3000);
+    }
+})
