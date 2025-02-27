@@ -193,7 +193,7 @@ nav{
   text-decoration: none;
   color: var(--white);
   margin-top: 20px;
-  width: 50vh;
+  width: 50vw;
   text-align: center;
   margin-top: 100px;
 }
@@ -429,6 +429,12 @@ h3{
   margin-left: 20px;
 }
 .web div p:nth-child(3){
+  font-size: 1.4rem;
+  align-self: center;
+  text-align: center;
+  margin-left: 0;
+}
+.mobile div p:nth-child(3){
   font-size: 1.4rem;
   align-self: center;
   text-align: center;
@@ -679,3 +685,296 @@ footer {
 }
 
 /* Media Queries ---------------------------------------------------------------------------------*/
+
+@media screen and (max-width: 2042px) {
+  /* Desktop View */
+  .language-card{
+    width: 650px;
+  }
+}
+@media screen and (max-width: 2042px){
+  .card:nth-child(1){
+    width: 450px;
+  }
+  .card:nth-child(2){
+    width: 350px;
+  }
+  .card:nth-child(3){
+    width: 500px;
+  }
+  .card:nth-child(4){
+    width: 600px;
+  }
+  .web{
+    margin-left: 0;
+    justify-content: center;
+  }
+  .mobile{
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1774px){
+  .card:nth-child(1){
+    width: 420px;
+  }
+  .card:nth-child(2){
+    width: 320px;
+  }
+  .card:nth-child(3){
+    width: 470px;
+  }
+  .card:nth-child(4){
+    width: 570px;
+  }
+}
+@media screen and (max-width: 1663px){
+  .card:nth-child(1){
+    width: 400px;
+  }
+  .card:nth-child(2){
+    width: 300px;
+  }
+  .card:nth-child(3){
+    width: 450px;
+  }
+  .card:nth-child(4){
+    width: 530px;
+  }
+  .shape1 {
+    top: 15%; /* Adjust placement */
+    left: 55%; /* Adjust placement */
+  }
+  .shape1 img{
+    width: 180px;
+    height: 180px;
+  }
+}
+@media screen and (max-width: 1663px){
+  .card-container{
+    width: 90vw;
+  }
+}
+@media screen and (max-width: 1663px){
+  .card-container{
+    width: 95vw;
+  }
+  .navbar-ul ul{
+    padding-right: 0;
+  }
+  .navbar-logo{
+    padding-left: 40px;
+  }
+  .contact{
+    width: 60vw;
+  }
+  #contact-form div input, #contact-form div textarea{
+    width: 35vw;
+  }
+}
+@media screen and (max-width: 1337px){
+  .card:nth-child(1){
+    width: 450px;
+  }
+  .card:nth-child(2){
+    width: 400px;
+  }
+  .card:nth-child(3){
+    width: 450px;
+  }
+  .card:nth-child(4){
+    width: 400px;
+  }
+  .language-card{
+    width: 850px;
+  }
+}
+@media screen and (max-width: 1183px){
+  .web{
+    width: 95vw;
+  }
+  .mobile{
+    width: 95vw;
+  }
+}
+@media screen and (max-width: 981px){
+  .navbar-ul ul li:nth-child(1){
+    display: none;
+  }
+  .navbar-ul ul li:nth-child(3){
+    display: none;
+  }
+  .cart-dropdown{
+    left: -400%;
+  }
+  .card:nth-child(1){
+    width: 400px;
+  }
+  .card:nth-child(2){
+    width: 350px;
+  }
+  .card:nth-child(3){
+    width: 400px;
+  }
+  .card:nth-child(4){
+    width: 350px;
+  }
+  .language-card{
+    width: 800px;
+  }
+  .shape1 {
+    top: 20%; /* Adjust placement */
+    left: 60%; /* Adjust placement */
+  }
+  .shape1 img{
+    width: 150px;
+    height: 150px;
+  }
+  .shape2 img{
+    width: 110px;
+    height: 110px;
+  }
+  .shape3 img{
+    width: 130px;
+    height: 130px;
+  }
+  .shape4 {
+    top: 20%; /* Adjust placement */
+    right: 5%; /* Adjust placement */
+  }
+  .shape4 img{
+    width: 140px;
+    height: 140px;
+  }
+  .contact{
+    width: 70vw;
+  }
+  #contact-form div input, #contact-form div textarea{
+    width: 45vw;
+  }
+}
+@media screen and (max-width: 873px){
+  html{
+    font-size: 9px;
+  }
+  .cart-dropdown{
+    left: -300%;
+  }
+  .card:nth-child(1){
+    width: 370px;
+  }
+  .card:nth-child(2){
+    width: 320px;
+  }
+  .card:nth-child(3){
+    width: 370px;
+  }
+  .card:nth-child(4){
+    width: 320px;
+  }
+  .language-card{
+    width: 700px;
+  }
+  .info_courses-container p{
+    width: 70vw;
+  }
+  .hero-container h2{
+    width: 70vw;
+  }
+}
+@media screen and (max-width: 810px){
+  .card:nth-child(1){
+    width: 350px;
+  }
+  .card:nth-child(2){
+    width: 300px;
+  }
+  .card:nth-child(3){
+    width: 350px;
+  }
+  .card:nth-child(4){
+    width: 300px;
+  }
+  .language-card{
+    width: 650px;
+  }
+  .shape {
+    display: none;
+  }
+  .contact{
+    width: 80vw;
+  }
+  #contact-form div input, #contact-form div textarea{
+    width: 60vw;
+  }
+}
+@media screen and (max-width: 768px){
+  .card{
+    width: 70vw !important;
+  }
+  .language-card{
+    width: 70vw !important;
+  }
+  .web div{
+    width: 280px;
+  }
+  .mobile div{
+    width: 280px;
+  }
+  .hero-container h1:nth-child(1){
+    font-size: 16rem;
+  }
+}
+@media screen and (max-width: 673px){
+  .web div{
+    width: 70vw;
+  }
+  .mobile div{
+    width: 70vw;
+  }
+  .add{
+    margin-left: 0 !important;
+    align-self: center;
+  }
+  .info_courses-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+  .language-card a{
+    width: 130px;
+  }
+  .contact h3{
+    font-size: 2.8rem;
+  }
+}
+@media screen and (max-width: 521px){
+  .navbar-ul ul li:last-child a{
+    display: none;
+  }
+  .cart-dropdown{
+    left: -520%;
+  }
+  .hero-container h1:nth-child(1){
+    font-size: 12rem;
+  }
+  .hero-container h1:nth-child(2){
+    font-size: 5rem;
+  }
+  .hero-container h2{
+    margin-top: 40px;
+  }
+  .info_courses-container h2{
+    font-size: 5rem;
+  }
+  .shopping-cart-button{
+    display: none;
+  }
+}
+@media screen and (max-width: 447px){
+  .language-card a{
+    width: 80px;
+  }
+}
