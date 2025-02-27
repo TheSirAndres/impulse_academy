@@ -136,6 +136,7 @@ function printData() {
     <td>$${totalPrice}</td>
     `;
     cartDropdownContent.appendChild(rowTotal);
+    updateData()
 }
 
 // remove product from the cart ------------------------------------------------------------------
@@ -149,6 +150,22 @@ cartDropdown.addEventListener("click", (e) => {
     if (e.target.classList.contains("empty-cart")){
         e.preventDefault();
         cart = [];
+        printData();
+    }
+})
+
+// save data to local storage ------------------------------------------------------------------
+
+function updateData() {
+    localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+// load data from local storage ------------------------------------------------------------------
+
+window.addEventListener("DOMContentLoaded", () => {
+    const cartData = JSON.parse(localStorage.getItem("cart"));
+    if (cartData) {
+        cart = cartData;
         printData();
     }
 })
