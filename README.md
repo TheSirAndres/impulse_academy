@@ -151,7 +151,7 @@ While primarily a personal learning project, constructive feedback is welcome th
 
 ## 📄 License
 MIT License. See `LICENSE` for details.
-
+Built with 🧠 by [Andres Alpizar] for **Impulse** (fictional corporation).
 ---
 
 🚀 **Impulse Learning**  
